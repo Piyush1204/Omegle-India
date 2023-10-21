@@ -499,14 +499,19 @@ body {
   display: none;
 }
 
+/* CSS for screens that are 600px wide or less */
 @media screen and (max-width: 600px) {
   .main_container {
     flex-direction: column;
   }
 
-  .dashboard_container,
-  .call_container,
-  .messenger_container {
+  .dashboard_container{
     width: 100%;
+    height: auto;
   }
+   
+  .call_container,.messenger_container{
+    display: none;
+  }
+ 
 }
