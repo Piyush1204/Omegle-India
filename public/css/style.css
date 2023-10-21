@@ -507,7 +507,7 @@ body {
 
   .dashboard_container{
     width: 100%;
-    height: auto;
+    height:100%;
   }
    
   .call_container,.messenger_container{
