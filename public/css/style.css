@@ -497,3 +497,15 @@ body {
 #start_recording_button{
   display: none;
 }
+
+@media screen and (max-width: 600px) {
+  .main_container {
+    flex-direction: column;
+  }
+
+  .dashboard_container,
+  .call_container,
+  .messenger_container {
+    width: 100%;
+  }
+}
