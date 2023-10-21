@@ -178,6 +178,7 @@ export const appendMessage = (message, right = false) => {
     ? elements.getRightMessage(message)
     : elements.getLeftMessage(message);
   messagesContainer.appendChild(messageElement);
+  messagesContainer.scrollTop = messagesContainer.scrollHeight;
 };
 
 export const clearMessenger = () => {
