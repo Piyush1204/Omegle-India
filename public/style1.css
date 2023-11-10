@@ -25,6 +25,16 @@
 	justify-content: center;
 	flex-direction: column;
 }
+.rules{
+	position: relative;
+	width: 100%;
+	
+	background: radial-gradient(#281c3e,#0f051d);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 .team-content{
 	width: 100%;
 	max-width: 1350px;
@@ -99,11 +109,46 @@
 }
 .faq-item {
 	background: #fff;
-	margin: 20px 70px ;
+	margin: 20px 200px ;
 	padding: 20px;
 	border-radius: 5px;
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
 }
 .faq-item h2 {
 	margin-bottom: 10px;
+}
+.rules h1{
+	margin-top: 60px;
+	margin-bottom: 70px;
+	color: white;
+  
+	font-size: 3rem;
+}
+ .rules h2 {
+	color: white;
+	margin: 20px 300px ;
+	font-size: 24px;
+}
+
+.rules ul {
+	list-style: disc;
+   
+	margin: 20px 300px ;
+	font-size: 24px;
+}
+
+.rules p{
+	font-size: 16px;
+	line-height: 1.5;
+	color: white;
+	margin: 20px 300px ;
+	font-size: 24px;
+	margin-bottom: 50px;
+}
+.rules li{
+	font-size: 16px;
+	line-height: 1.5;
+	color: white;
+	margin-left: 100px;
+	font-size: 24px;
 }
