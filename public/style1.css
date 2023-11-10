@@ -15,6 +15,16 @@
 	justify-content: center;
 	flex-direction: column;
 }
+.faq{
+	position: relative;
+	width: 100%;
+	
+	background: radial-gradient(#281c3e,#0f051d);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
 .team-content{
 	width: 100%;
 	max-width: 1350px;
@@ -80,4 +90,20 @@
 	.center h1{
 		font-size: 3.2rem;
 	}
+}
+.container {
+	width: 80%;
+	margin: 40px ;
+	
+	
+}
+.faq-item {
+	background: #fff;
+	margin: 20px 70px ;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.faq-item h2 {
+	margin-bottom: 10px;
 }
