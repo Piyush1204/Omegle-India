@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	font-family: 'Space Grotesk', sans-serif;
 	text-decoration: none;
+	
 }
 .team{
 	position: relative;
@@ -54,7 +55,7 @@
 }
 .center h1{
 	color: #fff;
-	font-size: 4rem;
+	font-size: 3rem;
 	text-align: center;
 }
 .box{
@@ -117,6 +118,7 @@
 .faq-item h2 {
 	margin-bottom: 10px;
 }
+
 .rules h1{
 	margin-top: 60px;
 	margin-bottom: 70px;
