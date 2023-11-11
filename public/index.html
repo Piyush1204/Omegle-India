@@ -1,4 +1,3 @@
-
 <html lang="en">
     <head>
         
@@ -24,40 +23,65 @@
                 </div>
             </div>
             <div class='logo_container'>
-                <img alt="image" width="135px" alt="logo" height="135px"src="utils/images/cute (1).gif">
-                <img  alt="image" width="175px" alt="logo-part" height="175px"src='./utils/images/logo.png'></img>
+                <img width="135px" alt="logo" height="135px"src="utils/images/cute (1).gif">
+                <img width="175px" alt="logo-part" height="175px"src='./utils/images/logo.png'></img>
                 
                
             </div>
         </div>
             
-            <h3 style="color: white; margin-left: 50px;"> Made with ❤️ in India</h3>
+           <h3 style="color: white; margin-left: 50px;"> Made with ❤️ in India</h3>
+
             <div>
+                <div class='checkbox_container'>
+                    <div class='checkbox_connection' id='allow_strangers_checkbox'>
+                        <img id='allow_strangers_checkbox_image' class='display_none' src='./utils/images/check.png'></img>
+                    </div>
+                    <p class='checkbox_container_paragraph'>Tick to connect with strangers</p>
+                    
+                    
+                </div>
                 
-                <div class='description_container'>
+                <div class='stranger_connecting_container'>
+                    <p style="font-size: 20px;" class='stranger_title_container'>Stranger</p>
+                    <div class='stranger_buttons_container'>
+                        <button class='connecting_button' id='stranger_chat_button'>
+                            <img alt="connectbutton"src='/utils/images/chatButton.png' class='connecting_buttons_image'></img>
+                        </button>
+                        <button class='connecting_button display_none' id='stranger_video_button'>
+                            <img alt="connectbutton"src='/utils/images/videoButton.png' class='connecting_buttons_image'></img>
+                        </button>
+                    </div>
+                </div>
+
+                <h1 style="text-align: center;margin-bottom: 2px;">OR</h1>
+
+                              <div class='description_container'>
                     <p class='description_container_paragraph'>
                         <!-- Talk with other user by pasting his personal code or talk with strangers! -->
-                        Connect with users using their code or chat with strangers!
+                        Connect with user using their code!
                     </p>
                 </div>
+
                 <div class='personal_code_container'>
                     <div class='personal_code_title_container'>
                         <p class='personal_code_title_paragraph'>
-                            Your personal code
+                            Share your code to invite others
                         </p>
                     </div>
                     <div class="personal_code_value_container">
                         <p class='personal_code_value_paragraph' id='personal_code_paragraph'></p>
                         <button class='personal_code_copy_button' id='personal_code_copy_button'>
-                            <img  alt="image"src='./utils/images/copyButton.png'></img>
+                            <img src='./utils/images/copyButton.png'></img>
                         </button>
                     </div>
                 </div>
                 </div>
+                
                 <div class='personal_code_connecting_container'>
-                    <p class='personal_code_connecting_paragraph'>Personal Code</p>
+                    <p style="font-size: 20px;"class='personal_code_connecting_paragraph'>Personal Code</p>
                     <div class='personal_code_connecting_input_container'>
-                        <input label="personal code"class='personal_code_input' id='personal_code_input'></input>
+                        <input placeholder="Enter their code" label="personal code"class='personal_code_input' id='personal_code_input'></input>
                     </div>
                     <div class='personal_code_connecting_buttons_container'>
                         <button class='connecting_button' id='personal_code_chat_button'>
@@ -68,28 +92,9 @@
                         </button>
                     </div>
                 </div>
-                <div class='stranger_connecting_container'>
-                    <p class='stranger_title_container'>Stranger</p>
-                    <div class='stranger_buttons_container'>
-                        <button class='connecting_button' id='stranger_chat_button'>
-                            <img alt="connectbutton"src='/utils/images/chatButton.png' class='connecting_buttons_image'></img>
-                        </button>
-                        <button class='connecting_button display_none' id='stranger_video_button'>
-                            <img alt="connectbutton"src='/utils/images/videoButton.png' class='connecting_buttons_image'></img>
-                        </button>
-                    </div>
-                </div>
-               
-                <div class='checkbox_container'>
-                    <div class='checkbox_connection' id='allow_strangers_checkbox'>
-                        <img  alt="image"id='allow_strangers_checkbox_image' class='display_none' src='./utils/images/check.png'></img>
-                    </div>
-                    <p class='checkbox_container_paragraph'>Allowing new people to connect</p>
-                    <br>
-                    
-                    
-                </div>
                 
+
+
                 
 
                 <div class='dashboard_blur display_none' id='dashboard_blur'></div>
@@ -110,32 +115,32 @@
                 
                 <div class='call_buttons_container display_none' id='call_buttons'>
                     <button class='call_button_small' id='mic_button'>
-                        <img  alt="image"src='./utils/images/mic.png' id='mic_button_image'></img>
+                        <img src='./utils/images/mic.png' id='mic_button_image'></img>
                     </button>
                     <button class='call_button_small' id='camera_button'>
-                        <img  alt="image"src='./utils/images/camera.png' id='camera_button_image'></img>
+                        <img src='./utils/images/camera.png' id='camera_button_image'></img>
                     </button>
                     <button style="margin-left: 170px;"class='call_button_large' id='hang_up_button'>
-                        <img  alt="image"src='./utils/images/hangUp.png'></img>
+                        <img src='./utils/images/hangUp.png'></img>
                     </button>
                     <button class='call_button_small' id='screen_sharing_button'>
-                        <img  alt="image"src='./utils/images/switchCameraScreenSharing.png'></img>
+                        <img src='./utils/images/switchCameraScreenSharing.png'></img>
                     </button>
                     <button class='call_button_small' id='start_recording_button'>
-                        <img alt="image" src='./utils/images/recordingStart.png'></img>
+                        <img src='./utils/images/recordingStart.png'></img>
                     </button>
                 </div>
                 <div class='finish_chat_button_container display_none' id='finish_chat_button_container'>
                     <button class='call_button_large' id='finish_chat_call_button'>
-                        <img  alt="image"src='./utils/images/hangUp.png'></img>
+                        <img src='./utils/images/hangUp.png'></img>
                     </button>
                 </div>
                 <div class='video_recording_buttons_container display_none' id='video_recording_buttons'>
                     <button id='pause_recording_button'>
-                        <img  alt="image"src='./utils/images/pause.png'></img>
+                        <img src='./utils/images/pause.png'></img>
                     </button>
                     <button id='resume_recording_button' class='display_none'>
-                        <img alt="image" src='./utils/images/resume.png'></img>
+                        <img src='./utils/images/resume.png'></img>
                     </button>
                     <button id='stop_recording_button'>
                         Stop recording
@@ -151,7 +156,7 @@
             <div class='new_message_container display_none' id='new_message'>
                 <input class='new_message_input' id='new_message_input' type='text' placeholder="Type your message..."></input>
                 <button class='send_message_button' id='send_message_button'>
-                    <img alt="image" class='send_message_button_image' src='./utils/images/sendMessageButton.png'></image>
+                    <img class='send_message_button_image' src='./utils/images/sendMessageButton.png'></image>
                 </button>
             </div>
         </div>
