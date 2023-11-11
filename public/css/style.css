@@ -509,9 +509,13 @@ body {
 }
 
 /* CSS for screens that are 600px wide or less */
+
 @media screen and (max-width: 600px) {
+  body{
+    background-color:  linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
+  }
   .main_container {
-    flex-direction: column;
+    flex-direction:column;
   }
 
 
@@ -519,24 +523,57 @@ body {
     width: 100%;
     height:auto;
   }
-  .messenger_container
-  {
-    display: none;
-  }
+  
    
   .call_container{
     width: 100%;
-    height:100%;
+    
   }
 
-  
-  .videos_container{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 0;
-    width: 100%;
-    height: 50%;
+  .videos_container {
+    
+  margin-top: 0;
+  margin-bottom: 30px;
+  margin-left: 0;
+  width: 100%;
+  border-radius: 0;
+  height: 50%;
+    /* background-image: url('../utils/images/logo.png'); */
   }
   
+  /* .videos_placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  } */
+  
+  .local_video_container {
+    position: absolute;
+    float: right;
+    width: 27%;
+    height: 27%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background: rgba(196, 196, 196, 0.2);
+    top: 15px;
+    left: 320px;
+  }
+  .local_video{
+    border-radius: 15px;
+    align-items: center;
+    
+  }
+  .messenger_container {
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    height: 50%;
+    width: 100%;
+    display: none;
 }
+}
+
+
 
