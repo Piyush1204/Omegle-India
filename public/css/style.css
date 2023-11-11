@@ -516,6 +516,7 @@ body {
 @media screen and (max-width: 600px) {
   body{
     background-color:  linear-gradient(168.68deg, #0052c9 1.12%, #0a91db 100%);
+    zoom: 0.8;
   }
   .main_container {
     flex-direction:column;
@@ -572,10 +573,13 @@ body {
   }
   .messenger_container {
    position: absolute;
-    top: 153%;
-    height: 45%;
+    top: 157%;
+    height: 40%;
     width: 100%;    
 }
+ .navbar{
+  margin-top: 100px;
+ }
 }
 
   
