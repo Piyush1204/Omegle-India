@@ -15,6 +15,41 @@ export const registerSocketEvents = (socket) => {
     ui.updatePersonalCode(socket.id);
   });
 
+  // Check if the viewport is 600px or less
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    // Assuming 'socket' is your socket.io connection
+
+    
+    socket.on("pre-offer", function () {
+      // When connected, hide dashboard and show call container
+      document.querySelector(".dashboard_container").style.display = "none";
+      document.querySelector(".call_container").style.display = "block";
+      document.querySelector(".messenger_container").style.display = "block";
+    });
+
+    socket.on("pre-offer-answer", function () {
+      // When connected, hide dashboard and show call container
+      document.querySelector(".dashboard_container").style.display = "none";
+      document.querySelector(".call_container").style.display = "block";
+      document.querySelector(".messenger_container").style.display = "block";
+    });
+
+    socket.on("user-hanged-up", function () {
+      // When disconnected, show dashboard and hide call container
+      document.querySelector(".dashboard_container").style.display = "block";
+      document.querySelector(".call_container").style.display = "none";
+      document.querySelector(".messenger_container").style.display = "none";
+    });
+    socket.on("call_button_large", function () {
+      // When disconnected, show dashboard and hide call container
+      document.querySelector(".dashboard_container").style.display = "block";
+      document.querySelector(".call_container").style.display = "none";
+      document.querySelector(".messenger_container").style.display = "none";
+    });
+   
+  }
+
+
   socket.on("pre-offer", (data) => {
     webRTCHandler.handlePreOffer(data);
   });
@@ -25,6 +60,7 @@ export const registerSocketEvents = (socket) => {
 
   socket.on('user-hanged-up', (data) => {
     webRTCHandler.handleConnectedUserHangedUp(data);
+ 
   })
 
   socket.on("webRTC-signaling", (data) => {

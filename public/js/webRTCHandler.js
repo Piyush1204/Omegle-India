@@ -53,6 +53,7 @@ const createPeerConnection = () => {
       ui.appendMessage(message);
     };
   };
+  
 
   peerConection.onicecandidate = (event) => {
     console.log("geeting ice candidates from stun server");
@@ -335,14 +336,22 @@ export const switchBetweenCameraAndScreenSharing = async (
   }
 };
 //hang up
-export const handleHangUp=()=>{
-  
-  const data={
-    connectedUserSocketId:connectedUserDetails.socketId,
-  }
+export const handleHangUp = () => {
+  const data = {
+    connectedUserSocketId: connectedUserDetails.socketId,
+  };
   closePeerConnectionAndResetState();
   wss.sendUserHangedUp(data);
+
+  // Check if viewport width is 600px or less
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    // Hide call container on caller side
+    document.querySelector(".dashboard_container").style.display = "block";
+    document.querySelector(".call_container").style.display = "none";
+    document.querySelector(".messenger_container").style.display = "none";
+  }
 };
+
 export const handleConnectedUserHangedUp=()=>{
   closePeerConnectionAndResetState();
 };
@@ -408,3 +417,4 @@ const setIncomingCallsAvailable=()=>{
     store.setCallState(constants.callState.CALL_AVAILABLE_ONLY_CHAT)
   }
 }
+
